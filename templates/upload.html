@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Upload</title>
+    <title>ahihi</title>
 </head>
 <body>
-<hi>File uploader</hi>
-<form id = "upload-form" action="{{ url_for("upload") }}" method="POST" enctype="multipart/form-data">
-    <input type="file" name="file" accept="image/*" multiple>
-    <input type="submit" value="Send">
+<form action="{{ url_for("upload") }}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept="image/*" multiple/>
+    <br>
+    <input type="text" name="name" placeholder="Your Name"/>
+    <br>
+    <input type="text" name="desc" placeholder="Image Description">
+    <br>
+    <input type="submit" name="submit" value="Send"/>
 
 </form>
 </body>
